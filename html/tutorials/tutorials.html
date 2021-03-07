@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name = "description" content = "Hi! I'm Sid, a student, programmer and golfer. On this site you'll discover tools, projects and future experiments that I am and will be working on.">
+        <title>Siddharth Rajaraman</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+
+        <link rel = "stylesheet" type = "text/css" href = "../../css/main.css">
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <input type="checkbox">
+                  <span></span>
+                  <span></span>
+                  <div class="menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="html/portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="../tools/tools.html">Tools</a></li>
+                  </div>
+            </div>
+            <div id = "mainTitle">
+                <h2 style = "font-size: 90px;">Tutorials</h2>
+            </div>
+
+
+            <style>
+                body {
+                    animation: fadeInAnimation ease 3s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+                @keyframes fadeInAnimation {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            </style>
+
+
+
+
+        </header>
+        <main>
+            <div class="button_cont"><a class="example_a" href="#introProgrammingPopup">An Introduction to Programming with Python</a></div>
+
+
+
+        </main>
+        <!--Intro to programming main-->
+        <div id="introProgrammingPopup" class="overlay">
+            <div style = "width: 90%; background-color: rgb(162, 202, 255);" class="popup">
+                <h2 style = "text-align: center;">An Introduction to Programming with Python</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <div class = "float-container">
+                        <div style = " text-align: center;" class = "float-child">
+                            <h3 style = "font-size: 30px; color: rgb(255, 255, 255);">Lessons: </h3>
+                            <!--start of lessons-->
+                            <ul>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#syntaxPython">Syntax</a></div></li> <br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#variablesPython">Variables</a></div></li><br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#dataTypesPython">Intro to Data Types</a></div></li><br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#printPython"> The print function</a></div></li><br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#indexPython">Index Notation</a></div></li><br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="#stringMethodsPython">String Methods</a></div></li><br>
+                                <li style = "list-style-type: none;"><div class="button_cont"><a class="example_a" href="2DListsPython">2D Lists</a></div></li><br>
+                            </ul>
+                        </div>
+                        <div style = "font-size: 30px; color: rgb(255, 255, 255); text-align: center;" class = "float-child">
+                            <h3 style = "font-size: 30px; color: rgb(255, 255, 255);">Activities: </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!--Syntax-->
+            <div id="syntaxPython" class="overlay">
+                <div class="popup">
+                    <h2 style = "text-align: center;">Syntax</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                        <p><b>Syntax</b> is simply the set of rules that determine what different combinations of characters mean</p>
+                        <p>Every programming langauge uses different words indifferent orders, so therefore, each langauge has its own syntax</p>
+                        <p>Essentially, syntax is a set of words and characters that a computer can read and act upon.</p>
+                        <img src = "../../pics/introPythonSyntax.png">
+                    </div>
+                </div>
+            </div>
+            <!--Variables-->
+            <div id="variablesPython" class="overlay">
+                <div style = "width: 64%;" class="popup">
+                    <h2 style = "text-align: center;">Variables</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                        <p><i>Variables</i> are ways of storing values so we can use them throughout our program, or even change them if necessary</p>
+                        <p>Every variable has a <i>name.</i> Names allow us to reuse the value repeatedly in our code</p>
+                        <p>In programming, we can change the value of the variable throughout our code</p>
+                        <img src = "../../pics/introPythonVariables.png">
+
+                        <h3>Reusing Values in Variables</h3>
+                        <p>Variables allow us to easily reuse values in different parts of our code</p>
+                        <p>Retyping a value throughout our code becomes tedious, which can lead to errors. Variables and Variables names help with this process</p>
+                        <img src = "../../pics/introPythonVariables1.png">
+
+                        <h3>Changing the Value of a Variable</h3>
+                        <p>In programming, we can easily change the value of a variable</p>
+                        <img src = "../../pics/introPythonVariables2.png">
+                    </div>
+                </div>
+            </div>
+            <!--IntroDataTypes-->
+            <div id="dataTypesPython" class="overlay">
+                <div class="popup">
+                    <h2 style = "text-align: center;">Intro to Data Types</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                        <p>In programming, <i>data</i> is simply the pieces of information that we use to create programs</p>
+                        <ul>
+                            <li><i>E.g.</i> the numbers in a calculation</li>
+                            <li><i>E.g.</i> the text printed on the screen</li>
+                        </ul>
+                        <p><i>Data types</i> are essentially different types of data. the type of data provides us with information such as how it is storied and what operations can be performed on it</p>
+                        <ul>
+                            <li><i>E.g.</i> we can multiply numbers but we cannot multiply words</li>
+                        </ul>
+                        <p><i>Primitives: </i> the most basic data types (Integers, Floats, Strings, Booleans)</p>
+                        <br>
+                        <h3>Floats and Integers</h3>
+                        <p>In programming, <i>Integers and Floats</i> are used to do three main things</p>
+                        <ul>
+                            <li>Descriptions - What is someone's age? What is the average test grade</li>
+                            <li>Calculations - what is the sum of two numbers? What is the distance from the earth to the moon</li>
+                            <li>Counting - how many times did the car drive around the track? How many times did the rocket fly around the world?</li>
+                        </ul>
+                        <img src = "../../pics/introPythonDataTypes.png">
+                        <br>
+                        <h3>Integers vs. Floats</h3>
+                        <p>We all know that in math, there are integers and there are decimals. While one is a whole number, the other represents a whole number PLUS a fraction of a number</p>
+                        <p>In programming, the concept remains the same. While <i>int</i> represents an integer, <i>float</i> represents a decimal</p>
+                        <img src = "../../pics/introPythonDataTypes1.png">
+                        <br>
+                        <h3>Strings</h3>
+                        <p><i>Strings: </i>a sequence of characters</p>
+                        <p><i>Characters: </i>letters, spaces, numbers, or symbols</p>
+                        <p>Strings are used to:</p>
+                        <ul>
+                            <li>Display data to the screen</li>
+                            <li>Add or remove text (we can split strings into smaller strings or even combine strings to make longer ones)</li>
+                            <li>Modify characters (E.g. we could capitalize the first letter in a string)</li>
+                            <li>Allow the computer to communicate with us in a human friendly manner.</li>
+                        </ul>
+                        <img src = "../../pics/introPythonDataTypes2.png">
+                        <p>Strings can look like other data types. It's important to knowt hat even if a number looks like a number, it might be a string</p>
+                        <p>For example, there is a difference between '35' and 35</p>
+                        <img src = "../../pics/introPythonDataTypes3.png">
+                        <br>
+                        <h3>Boolean</h3>
+                        <p>Boolean values represnt <i>true</i> and <i>false</i></p>
+                        <p>Booleans are used to: </p>
+                        <ul>
+                            <li>Validate things (did a youtube video go viral?)</li>
+                            <li>make decisions (is it cold outside? Yes (true)? Then I should wear a sweater)</li>
+                        </ul>
+                        <p>The two boolean values are opposites. Sometimes, we can think of them as <i>on</i> or <i>off</i>, or even 1 or 0</p>
+                        <p>It is important to know that true and false are not strings</p>
+                        <img src = "../../pics/introPythonDataTypes4.png">
+                    </div>
+                </div>
+            </div>
+            <!--PrintFunction-->
+            <div id="printPython" class="overlay">
+                <div style = "width: 56%;" class="popup">
+                    <h2 style = "text-align: center;">The Print Function</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                        <p>The <i>print()</i> function is used to print a specific message to the screen (console)</p>
+                        <p>The message can be a string, or any other object of any data type.</p>
+                        <p>The message will be converted to a string before it is printed</p>
+                        <img src = "../../pics/introPythonPrintFunc.png">
+                        <br>
+                        <h3>Examples</h3>
+                        <img src = "../../pics/introPythonPrintFunc1.png">
+                    </div>
+
+                </div>
+            </div>
+        <!---->
+    </body>
+</html>

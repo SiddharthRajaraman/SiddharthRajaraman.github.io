@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name = "description" content = "Hi! I'm Sid, a student, programmer and golfer. On this site you'll discover tools, projects and future experiments that I am and will be working on.">
+        <title>Siddharth Rajaraman</title>
+
+
+        <link rel = "stylesheet" type = "text/css" href = "css/main.css">
+
+
+        <style>
+            body {
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <div class="nav">
+                <input type="checkbox">
+                  <span></span>
+                  <span></span>
+                  <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/tutorials/tutorials.html">Tutorials</a></li>
+                    <li><a href="html/portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="html/tools/tools.html">Tools</a></li>
+                  </div>
+            </div>
+
+            <h2 style = "font-family: 'Montserrat', serif; text-align: center; font-size: 40px;">Welcome! On this site you'll discover tools, projects and future experiments that I am and will be working on.</h2>
+        </header>
+        <main>
+            <div class = "float-container">
+                <div style = " text-align: center;" class = "float-child">
+                    <h3 style = "font-size: 30px; color: rgb(236, 113, 104);">Things I'm working on: </h3>
+                    <br>
+                    <div class="button_cont"><a class="example_a" href="#introProgrammingPopup">An Introduction to Programming with Python →</a></div>
+                </div>
+                <div style = "text-align: center;" class = "float-child">
+                    <h3 style = "font-size: 30px; color: rgb(236, 113, 104);">Explore: </h3>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="introProgrammingPopup" class="overlay">
+                <div class="popup">
+                    <h2 style = "text-align: center;">Here's a sneak peak!</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMeRunMn3Vs_PZJYhXwc5taFfG5u7ybcwRgc5in5NKF09sqDd_m6Kgo9TYIcQF6ePxhjDYjIRucVWp/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
