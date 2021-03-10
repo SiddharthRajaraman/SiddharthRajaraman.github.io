@@ -328,7 +328,128 @@
                     <a class="close" href="#introProgrammingPopup">&times;</a>
                     <div class="content">
                       <p>Many programming languages, such as C++, use braces to indicate a block of code. In python, we use indentation</p>
-                      <p></p>
+                      <p>In python, a block starts with an indentation and ends when the indentation stops. Here is an example:</p>
+                      <img src = "../../pics/introPythonIndentation.png" />
+                      <p>As you can see, there are two "blocks" of code:</p>
+                      <ul>
+                        <li>1 right after the first line</li>
+                        <li>1 right after the second line</li>
+                      </ul>
+                      <p>We can see that these bloks are indicated by the indentations</p>
+                    </div>
+                </div>
+            </div>
+            <!--commentsPython-->
+            <div id="commentsPython" class="overlay">
+                <div style = "width: 49%;" class="popup">
+                    <h2 style = "text-align: center;">Comments</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <p>Comments are used to describe what is happening within the program</p>
+                      <p>They are usually used to explain code, so someone who is reading it will not struggle to understand it</p>
+                      <p>When running your code, comments will nto impact the output</p>
+                      <p>In python, we use the # symbol to indicate a comment</p>
+                      <img src = "../../pics/introPythonComments.png" />
+                      <p>In some cases, we can have comments that take up several lines</p>
+                      <p>One way to achieve this is to put a # symbol before each line</p>
+                      <img src = "../../pics/introPythonComments1.png" />
+                      <p>Otherwise, we can use 3 consecutive single-quotes</p>
+                      <img src = "../../pics/introPythonComments2.png" />
+                    </div>
+                </div>
+            </div>
+            <!--convertingDataTypesPython-->
+            <div id="convertingDataTypesPython" class="overlay">
+                <div style = "width: 49%;" class="popup">
+                    <h2 style = "text-align: center;">Converting between Data Types</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <p><i>Type Conversion: </i> converting from one data type to another</p>
+                      <p>There are two types of type conversion</p>
+                      <ul>
+                        <li><i>Implicit Type Conversion: </i> Python automatically converts from one data type to another</li>
+                        <ul>
+                          <li>E.g. when adding an integer and a float, the sum is a float</li>
+                        </ul>
+                        <li><i>Explicit Type Conversion: </i> the user converts from one data type to another</li>
+                        <ul>
+                          <li>If you ahve the integer: <i>35</i> and the string: <i>"45"</i>, you can add them by converting the string to an integer and finding the sum of both numbers</li>
+                        </ul>
+                      </ul>
+                      <img src = "../../pics/introPythonConvertingDataTypes.png" />
+                    </div>
+                </div>
+            </div>
+            <!--inputPython-->
+            <div id="inputPython" class="overlay">
+                <div style = "width: 49%;" class="popup">
+                    <h2 style = "text-align: center;">Input</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <p>We have always thought of variable values as being set only in the code.</p>
+                      <p>With the input function, the user who is using the program will be able to give the variable a value</p>
+                      <img src = "../../pics/introPythonInput.png" />
+                    </div>
+                </div>
+            </div>
+            <!--importingPython-->
+            <div id="importingPython" class="overlay">
+                <div style = "width: 49%;" class="popup">
+                    <h2 style = "text-align: center;">Importing in Python</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <p>As our program gets large in size, it is important to split it into different <i>modules</i></p>
+                      <ul>
+                        <li><i>Module: </i>essentially a python program. It contains different commands and statements</li>
+                      </ul>
+                      <p>We can use the statements/definitions in one module in another. In order to do this, we can use the <i>import</i> keyword</p>
+                      <p>One example of a very popular module is the <i>math</i> module. We can import it using this line: </p>
+                      <img src = "../../pics/introPythonImporting.png" />
+                      <p>By importing the <i>math</i> module within our program, we have access to all of its abilities.</p>
+                      <p>For example, the module gives a very precise version of PI, which we can use by doing the following:</p>
+                      <img src = "../../pics/introPythonImporting1.png" />
+                      <p>We can also use this module to find exponents</p>
+                      <img src = "../../pics/introPythonImporting2.png" />
+                    </div>
+                </div>
+            </div>
+            <!--operatorsPython-->
+            <div id="operatorsPython" class="overlay">
+                <div style = "width: 54%;" class="popup">
+                    <h2 style = "text-align: center;">Operators</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <p>Just like in normal math, operators in python are symbols that execute arithmetic or logical problems</p>
+                      <img src = "../../pics/introPythonOperators.png" />
+                      <img src = "../../pics/introPythonOperators1.png" />
+                      <p>Examples: </p>
+                      <img src = "../../pics/introPythonOperators2.png" />
+                      <br />
+                      <h3>Comparison operators</h3>
+                      <p>We use comparison operators to compare values</p>
+                      <p>They returna  boolean value (true or false)</p>
+                      <img src = "../../pics/introPythonOperators3.png" />
+                      <br />
+                      <h3>Logical Operators</h3>
+                      <img src = "../../pics/introPythonOperators4.png" />
+                    </div>
+                </div>
+            </div>
+            <!--ifStatementsPython-->
+            <div id="ifStatementsPython" class="overlay">
+                <div style = "width: 66%;" class="popup">
+                    <h2 style = "text-align: center;">if...elif...else statements</h2>
+                    <a class="close" href="#introProgrammingPopup">&times;</a>
+                    <div class="content">
+                      <img src = "../../pics/introPythonIfStatement.png" />
+                      <p>Examples: </p>
+                      <img src = "../../pics/introPythonIfStatement1.png" />
+                      <br />
+                      <h3>If...else statement syntax</h3>
+                      <img src = "../../pics/introPythonIfStatement2.png" />
+                      <br />
+                      <h3>If...elif...else statement syntax</h3>
+                      <img src = "../../pics/introPythonIfStatement3.png" />
                     </div>
                 </div>
             </div>
