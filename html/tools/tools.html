@@ -52,13 +52,51 @@
             <div class="button_cont"><a class="example_a" href="#wordCounter">Word Counter</a></div>
         </main>
 
+
+        <script>
+        function test() {
+          alert("hi")
+        }
+
+        </script>
         <!--Num System conversion-->
         <div id="numberSystemConversion" class="overlay">
             <div class="popup">
                 <h2 style = "text-align: center;">Number System Conversion</h2>
                 <a class="close" href="#">&times;</a>
                 <div class="content">
-                    <p>Coming soon!</p>
+                  <!--Js-->
+                  <script src = "../../js/numSys.js"></script>
+
+
+                  <ul style = "list-style: none;">
+                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="decimal()">Decimal</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="binary()">Binary</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="octal()">Octal</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="hexa()">Hexadecimal</a></div></li>
+
+                    <br /><br />
+
+                    <div class="form__group">
+                      <input type="text" class="form__input" id="numSysInput" placeholder="Decimal" required="" />
+                    </div>
+                    <br /><br />
+
+                    <div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="numSysSubmit()">Submit</a></div>
+
+
+
+                    <br /><br />
+                    <p id = "numSysDecimal">Decimal: </p>
+                    <p id = "numSysBinary">Binary: </p>
+                    <p id = "numSysOctal">Octal: </p>
+                    <p id = "numSysHex">Hexadecimal: </p>
+
+
+
+                  </ul>
+
+
                 </div>
             </div>
         </div>
