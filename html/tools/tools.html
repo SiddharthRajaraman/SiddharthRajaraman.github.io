@@ -5,6 +5,7 @@
         <meta name = "description" content = "Hi! I'm Sid, a student, programmer and golfer. On this site you'll discover tools, projects and future experiments that I am and will be working on.">
         <title>Siddharth Rajaraman</title>
 
+        <script src = "../../js/tools.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 
@@ -66,14 +67,14 @@
                 <a class="close" href="#">&times;</a>
                 <div class="content">
                   <!--Js-->
-                  <script src = "../../js/numSys.js"></script>
+
 
 
                   <ul style = "list-style: none;">
-                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="decimal()">Decimal</a></div></li>
-                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="binary()">Binary</a></div></li>
-                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="octal()">Octal</a></div></li>
-                    <li style = "display: inline;"><div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="hexa()">Hexadecimal</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a style = "background: black" class="example_a" href = "#numberSystemConversion" onclick="decimal()">Decimal</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a style = "background: black" class="example_a" href = "#numberSystemConversion" onclick="binary()">Binary</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a style = "background: black" class="example_a" href = "#numberSystemConversion" onclick="octal()">Octal</a></div></li>
+                    <li style = "display: inline;"><div class="button_cont"><a style = "background: black" class="example_a" href = "#numberSystemConversion" onclick="hexa()">Hexadecimal</a></div></li>
 
                     <br /><br />
 
@@ -82,7 +83,7 @@
                     </div>
                     <br /><br />
 
-                    <div class="button_cont"><a class="example_a" href = "#numberSystemConversion" onclick="numSysSubmit()">Submit</a></div>
+                    <div class="button_cont"><a style = "background: black" class="example_a" href = "#numberSystemConversion" onclick="numSysSubmit()">Submit</a></div>
 
 
 
@@ -91,12 +92,7 @@
                     <p id = "numSysBinary">Binary: </p>
                     <p id = "numSysOctal">Octal: </p>
                     <p id = "numSysHex">Hexadecimal: </p>
-
-
-
                   </ul>
-
-
                 </div>
             </div>
         </div>
@@ -104,20 +100,35 @@
         <!--alphabetizer-->
         <div id="alphabetizer" class="overlay">
             <div class="popup">
-                <h2 style = "text-align: center;">Number System Conversion</h2>
+                <h2 style = "text-align: center;">Alphabetizer</h2>
                 <a class="close" href="#">&times;</a>
                 <div class="content">
-                    <p>Coming soon!</p>
+                  <p>Please enter words/letters separated by spaces</p>
+                  <br />
+                  <div class="form__group">
+                    <input type="text" class="form__input" id="alphabetizerInp" placeholder="Input" required="" />
+                  </div>
+                  <br /><br />
+                  <div class="button_cont"><a style = "background: grey" class="example_a" href = "#alphabetizer" onclick="alphabetize()">Submit</a></div>
+
+
                 </div>
             </div>
         </div>
         <!--word counter-->
         <div id="wordCounter" class="overlay">
             <div class="popup">
-                <h2 style = "text-align: center;">Number System Conversion</h2>
+                <h2 style = "text-align: center;">Word Counter</h2>
                 <a class="close" href="#">&times;</a>
                 <div class="content">
-                    <p>Coming soon!</p>
+                  <p>Please enter several words</p>
+                  <br />
+                  <div class="form__group">
+                    <input type="text" class="form__input" id="wordCounterInp" placeholder="Input" required="" />
+                  </div>
+                  <br /><br />
+                  <div class="button_cont"><a style = "background: grey" class="example_a" href = "#wordCounter" onclick="wordCount()">Submit</a></div>
+
                 </div>
             </div>
         </div>

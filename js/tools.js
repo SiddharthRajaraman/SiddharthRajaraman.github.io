@@ -39,3 +39,19 @@ function numSysSubmit() {
   }
 
 }
+
+
+function alphabetize() {
+  var inp = document.getElementById("alphabetizerInp").value;
+  var inpSplit = inp.split(" ");
+
+  inpSplit.sort();
+
+  document.getElementById("alphabetizerInp").value = inpSplit;
+}
+function wordCount() {
+  var inp = document.getElementById("wordCounterInp").value;
+  var inpSplit = inp.split(" ");
+
+  document.getElementById("wordCounterInp").value = inpSplit.length;
+}
