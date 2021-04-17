@@ -5,6 +5,7 @@
         <meta name = "description" content = "Hi! I'm Sid, a student, programmer and golfer. On this site you'll discover tools, projects and future experiments that I am and will be working on.">
         <title>Siddharth Rajaraman</title>
 
+        <script src = "js/music.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 
@@ -32,8 +33,11 @@
 
         </header>
         <main>
-
-
+            <audio id = "audioPlayer" src = "music/music.mp3"></audio>
+            <p style = "position: absolute; bottom: 2%;" id = "credits"></p>
+            <div style = "position: absolute; bottom: 2%; right: 2%;" class="button_cont">
+                <a id = "audioButton" class="example_a" href = "#" onclick = "togglePlay()">Listen to some music while you're here!</a>
+            </div>
 
 
         </main>
