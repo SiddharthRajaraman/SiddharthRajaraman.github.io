@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 
-
+        <script src = "../../js/music.js"></script>
         <link rel = "stylesheet" type = "text/css" href = "../../css/main.css">
     </head>
     <body>
@@ -53,6 +53,13 @@
             <div class="button_cont"><a class="example_a" href="#numberSystemConversion">Number System Conversion</a></div>
             <div class="button_cont"><a class="example_a" href="#alphabetizer">Alphabetizer</a></div>
             <div class="button_cont"><a class="example_a" href="#wordCounter">Word Counter</a></div>
+
+
+            <audio id = "audioPlayer" src = "../../music/music.mp3"></audio>
+            <p style = "position: absolute; bottom: 2%;" id = "credits"></p>
+            <div style = "position: absolute; bottom: 2%; right: 2%;" class="button_cont">
+                <a id = "audioButton" class="example_a" href = "#" onclick = "togglePlay()">Listen to some music while you're here!</a>
+            </div>
         </main>
 
 

@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 
-
+        <script src = "../../js/music.js"></script>
         <link rel = "stylesheet" type = "text/css" href = "../../css/main.css">
 
             <style>
@@ -48,7 +48,14 @@
             -->
         </header>
         <main>
-            <h2 style = "font-family: 'Montserrat', serif; text-align: center; font-size: 40px;">Hey! Im Sid. I'm a student, programmer, and avid golfer</h2>
+            <audio id = "audioPlayer" src = "../../music/music.mp3"></audio>
+            <p style = "position: absolute; bottom: 2%;" id = "credits"></p>
+            <div style = "position: absolute; bottom: 2%; right: 2%;" class="button_cont">
+                <a id = "audioButton" class="example_a" href = "#" onclick = "togglePlay()">Listen to some music while you're here!</a>
+            </div>
+
+
+            <h2 style = "font-family: 'Montserrat', serif; text-align: center; font-size: 40px;">Hey! I'm Sid. I'm a student, programmer, and avid golfer</h2>
             <h2 style = "font-family: 'Montserrat', serif; text-align: center; font-size: 32px;">On this site, we explore a variety of tutorials, tools, as well as past, present and future projects involving... me!</h2>
 
             <div class = "float-container">
