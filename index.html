@@ -1,50 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = 'utf-8'>
-        <meta name = "description" content = "Hi! I'm Sid, a student, programmer and golfer.  On this site you'll discover tools, projects and future experiments that I am and will be working on.">
-        <title>Siddharth Rajaraman</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <script src="src/mainJS.js"></script>
+    <title>Siddharth Rajaraman</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <div class="menu">
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </div>
+      <div id="mainHeading">
+        <h1 style="font-size: 7vw">Siddharth Rajaraman</h1>
+        <div class="button_cont">
+          <a onclick="smoothScroll()" class="example_a" href="#"
+            >Click to Explore!</a
+          >
+        </div>
+      </div>
+    </header>
 
-        <script src = "js/music.js"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <section class="cardView">
+      <a class="cards" href="#">
+        <img src="assets/pythonCode.png" alt="" class="cardImage" />
 
-
-        <link rel = "stylesheet" type = "text/css" href = "css/main.css">
-
-    </head>
-    <body>
-        <header>
-            <div class="nav">
-                <input type="checkbox">
-                  <span></span>
-                  <span></span>
-                  <div class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="html/tutorials/tutorials.html">Tutorials</a></li>
-                    <li><a href="html/portfolio/portfolio.html">Portfolio</a></li>
-                    <li><a href="html/tools/tools.html">Tools</a></li>
-                    <li><a href="html/aboutMe/aboutMe.html">About Me</a></li>
-                  </div>
-            </div>
-            <div id = "mainTitle">
-                <h2 style = "font-size: 90px;">Siddharth Rajaraman</h2>
-                <div class="button_cont"><a class="example_a" href="explore.html">Click to Explore!</a></div>
-            </div>
-
-
-
-
-
-        </header>
-        <main>
-            <audio id = "audioPlayer" src = "music/music.mp3"></audio>
-            <p style = "position: absolute; bottom: 2%;" id = "credits"></p>
-            <div style = "position: absolute; bottom: 2%; right: 2%;" class="button_cont">
-                <a id = "audioButton" class="example_a" href = "#" onclick = "togglePlay()">Listen to some music while you're here!</a>
-            </div>
-        </main>
-
-
-    </body>
+        <div class="description">
+          <h1>Introduction to Python - iOS app</h1>
+          <p>
+            An app designed using Swift and SwiftUI to introduce beginner
+            programmers to Programming using the Python language.
+          </p>
+        </div>
+      </a>
+      <!---->
+      <a class="cards" href="#">
+        <img
+          class="cardImage"
+          src="assets/outlierDetectionComparison.png"
+          alt=""
+        />
+        <div class="description">
+          <h2>Outlier Detection Comparison</h2>
+          <p>
+            Comprehensively compared 3 generic outlier detection algorihtms on a
+            water-quality based dataset.
+          </p>
+        </div>
+      </a>
+    </section>
+  </body>
 </html>
