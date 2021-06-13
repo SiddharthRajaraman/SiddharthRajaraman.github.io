@@ -90,7 +90,7 @@ header {
 }
 
 .menu li a:hover {
-  color: #6093cc;
+  color: aliceblue;
 }
 
 .nav input {
@@ -164,7 +164,7 @@ header {
   margin: 5rem auto;
   display: grid;
   gap: 2rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 .cards {
   background: #fff;
@@ -190,4 +190,34 @@ header {
 
 .description {
   padding: 1rem 2rem;
+}
+
+/*about me*/
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  color: rgb(209, 208, 208);
+}
+.aboutMeHeading {
+  position: relative;
+}
+.aboutMeHeading h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*social media logos*/
+.fa {
+  padding: 40px;
+  color: rgb(209, 208, 208);
+  transition: all 0.3s ease-in-out;
+}
+
+.fa:hover {
+  transform: scale(1.2);
+  color: aquamarine;
 }

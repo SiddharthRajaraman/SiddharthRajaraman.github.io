@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="src/mainJS.js"></script>
     <title>Siddharth Rajaraman</title>
   </head>
   <body>
-    <header>
+    <header class="goUp">
       <div class="nav">
-        <input type="checkbox" />
+        <input onclick="smoothScrollGoUp()" type="checkbox" />
         <span></span>
         <span></span>
         <div class="menu">
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a onclick="smoothScrollProjects()" href="#">Projects</a></li>
+          <li><a onclick="smoothScrollAboutMe()" href="#">About</a></li>
+          <li><a onclick="smoothScrollContact()" href="#">Contact</a></li>
         </div>
       </div>
       <div id="mainHeading">
         <h1 style="font-size: 7vw">Siddharth Rajaraman</h1>
         <div class="button_cont">
-          <a onclick="smoothScroll()" class="example_a" href="#"
+          <a onclick="smoothScrollProjects()" class="example_a" href="#"
             >Click to Explore!</a
           >
         </div>
@@ -61,5 +65,64 @@
         </div>
       </a>
     </section>
+    <div class="aboutMe">
+      <div class="aboutMeHeading">
+        <h1 style="color: aliceblue">About Me →</h1>
+      </div>
+      <div style="padding: 50px" class="aboutMeInfo">
+        <h1>Hey! I'm Sid. I'm a Student, Programmer, and Avid golfer</h1>
+        <h2 style="color: aliceblue">Who I Am</h2>
+        <ul>
+          <li>
+            👨🏾‍🎓 I'm currently a high school senior residing in North Carolina. I
+            adore all things technology and love baking and golfing
+          </li>
+          <li>
+            📚 I love learning new things, and creating tutorials in a style
+            (hopefully) suitable for all people
+          </li>
+        </ul>
+        <h2 style="color: aliceblue">More</h2>
+        <ul>
+          <li>
+            💻 I learned to code aged 13, and have created many small projects
+            through the years
+          </li>
+          <li>
+            🎻 I enjoy playing the mridangam and violin, and have learned from
+            masters in my area for 9 and 4 years respectively.
+          </li>
+          <li>
+            ⛳️ Perhaps the most enjoyable (and frustrating) aspects of my life
+            are the weekly golf rounds and range sessions. I have been regularly
+            playing for the past 3 years (and somehow have gotten worse?).
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      style="
+        padding: 7em;
+        padding-bottom: 13em;
+        color: rgb(209, 208, 208);
+        text-align: center;
+        font-size: 20px;
+      "
+      class="contactMe"
+    >
+      <h1 style="color: aliceblue">Contact</h1>
+      <h3>sidrajaraman@gmail.com</h3>
+      <a
+        href="https://www.linkedin.com/in/siddharth-rajaraman-46078620b/"
+        target="_blank"
+        class="fa fa-linkedin"
+      ></a>
+      <a
+        href="https://www.instagram.com/sid_raj105/"
+        target="_blank"
+        class="fa fa-instagram"
+      ></a>
+    </div>
   </body>
 </html>
